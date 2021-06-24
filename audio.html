@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>PRACTICE SESSION</title>
+<style>
+       
+ #button{
+        width:20%;
+        height:36px;
+        font-size:x-large;
+       border-radius:90%;
+       background-color:cyan;
+    }
+ #button1{
+        width:20%;
+        height:36px;
+        font-size:x-large;
+       border-radius:90%;
+       background-color:cyan;
+    }
+</style>
+    </head>
+
+    <body>
+
+       
+         <canvas id="mycanvas" width="1000" height="300" "></canvas>
+                         <center>
+        <button id=button  onclick="fillrect()"> Play </button>
+        <button id=button1  onclick="stop()">Pause </button> 
+                          </center>
+
+
+<script> 
+var canvas=document.getElementById("mycanvas");
+var ctx=canvas.getContext("2d");
+
+// Rectangle Creation
+ctx.strokeRect(10, 90, 10, 75);
+ctx.strokeRect(25, 80, 10, 85);
+ctx.strokeRect(40, 70, 10, 95);
+ctx.strokeRect(55, 60, 10, 105);
+ctx.strokeRect(70, 50, 10, 115);
+ctx.strokeRect(85, 80, 10, 125);
+ctx.strokeRect(100, 90, 10, 135);
+
+ctx.strokeRect(115, 50, 10, 115);
+ctx.strokeRect(130, 80, 10, 185);
+ctx.strokeRect(145, 70, 10, 195);
+ctx.strokeRect(160, 60, 10, 105);
+ctx.strokeRect(175, 50, 10, 115);
+ctx.strokeRect(190, 80, 10, 125);
+ctx.strokeRect(205, 90, 10, 135);
+
+ctx.strokeRect(220, 90, 10, 175);
+ctx.strokeRect(235, 80, 10, 185);
+ctx.strokeRect(250, 70, 10, 195);
+ctx.strokeRect(265, 60, 10, 150);
+ctx.strokeRect(280, 50, 10, 115);
+ctx.strokeRect(295, 80, 10, 125);
+ctx.strokeRect(305, 90, 10, 135);
+
+ctx.strokeRect(320, 50, 10, 115);
+ctx.strokeRect(335, 80, 10, 185);
+ctx.strokeRect(350, 70, 10, 195);
+ctx.strokeRect(365, 60, 10, 105);
+ctx.strokeRect(380, 50, 10, 115);
+ctx.strokeRect(395, 80, 10, 135);
+ctx.strokeRect(410, 90, 10, 105);
+
+
+
+//Coloring the rectangle
+function fillrect()
+{
+    ctx.fillStyle = "pink";
+setTimeout(function(){ctx.fillRect(10, 90, 10, 75)},1000);
+setTimeout(function(){ctx.fillRect(25, 80, 10, 85)},2000);
+setTimeout(function(){ctx.fillRect(40, 70, 10, 95)},3000);
+setTimeout(function(){ctx.fillRect(55, 60, 10, 105)},4000);
+setTimeout(function(){ctx.fillRect(70, 50, 10, 115)},5000);
+setTimeout(function(){ctx.fillRect(85, 80, 10, 125)},6000);
+setTimeout(function(){ctx.fillRect(100, 90,10, 135)},7000);
+
+setTimeout(function(){ctx.fillRect(115, 50, 10, 115)},8000);
+setTimeout(function(){ctx.fillRect(130, 80, 10, 185)},9000);
+setTimeout(function(){ctx.fillRect(145, 70, 10, 195)},10000);
+setTimeout(function(){ctx.fillRect(160, 60, 10, 105)},11000);
+setTimeout(function(){ctx.fillRect(175, 50, 10, 115)},12000);
+setTimeout(function(){ctx.fillRect(190, 80, 10, 125)},13000);
+setTimeout(function(){ctx.fillRect(205, 90, 10, 135)},14000);
+
+setTimeout(function(){ctx.fillRect(220, 90, 10, 175)},15000);
+setTimeout(function(){ctx.fillRect(235, 80, 10, 185)},16000);
+setTimeout(function(){ctx.fillRect(250, 70, 10, 195)},17000);
+setTimeout(function(){ctx.fillRect(265, 60, 10, 150)},18000);
+setTimeout(function(){ctx.fillRect(280, 50, 10, 115)},19000);
+setTimeout(function(){ctx.fillRect(295, 80, 10, 125)},20000);
+setTimeout(function(){ctx.fillRect(305, 90, 10, 135)},21000);
+
+setTimeout(function(){ctx.fillRect(320, 50, 10, 115)},22000);
+setTimeout(function(){ctx.fillRect(335, 80, 10, 185)},23000);
+setTimeout(function(){ctx.fillRect(350, 70, 10, 195)},24000);
+setTimeout(function(){ctx.fillRect(365, 60, 10, 105)},25000);
+setTimeout(function(){ctx.fillRect(380, 50, 10, 115)},26000);
+setTimeout(function(){ctx.fillRect(395, 80, 10, 135)},27000);
+setTimeout(function(){ctx.fillRect(410, 90, 10, 105)},28000);
+}
+
+
+function stop()
+{
+    ctx.fillStyle = "#0000";
+    ctx.strokeRect(10, 90, 10, 75);
+    ctx.strokeRect(25, 80, 10, 85);
+    ctx.strokeRect(40, 70, 10, 95);
+    ctx.strokeRect(55, 60, 10, 105);
+    ctx.strokeRect(70, 50, 10, 115);
+    ctx.strokeRect(85, 80, 10, 125);
+    ctx.strokeRect(100, 90, 10, 135);
+    
+    ctx.strokeRect(115, 50, 10, 115);
+    ctx.strokeRect(130, 80, 10, 185);
+    ctx.strokeRect(145, 70, 10, 195);
+    ctx.strokeRect(160, 60, 10, 105);
+    ctx.strokeRect(175, 50, 10, 115);
+    ctx.strokeRect(190, 80, 10, 125);
+    ctx.strokeRect(205, 90, 10, 135);
+    
+    ctx.strokeRect(220, 90, 10, 175);
+    ctx.strokeRect(235, 80, 10, 185);
+    ctx.strokeRect(250, 70, 10, 195);
+    ctx.strokeRect(265, 60, 10, 150);
+    ctx.strokeRect(280, 50, 10, 115);
+    ctx.strokeRect(295, 80, 10, 125);
+    ctx.strokeRect(305, 90, 10, 135);
+    
+    ctx.strokeRect(320, 50, 10, 115);
+    ctx.strokeRect(335, 80, 10, 185);
+    ctx.strokeRect(350, 70, 10, 195);
+    ctx.strokeRect(365, 60, 10, 105);
+    ctx.strokeRect(380, 50, 10, 115);
+    ctx.strokeRect(395, 80, 10, 135);
+    ctx.strokeRect(410, 90, 10, 105);
+
+}
+</script>
+     
+    </body>
+    
+</html>
